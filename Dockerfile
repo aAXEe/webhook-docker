@@ -28,6 +28,7 @@ RUN mkdir /data
 
 
 ENV FLASK_GITHUB_WEBHOOK_REPOS_JSON=/data/repos.json
+ENV FLASK_GITHUB_WEBHOOK_GITHUB_TOKEN=/data/github_token
 
 CMD ["/sbin/my_init", "python3", "./index.py", "80"]
 EXPOSE 80
